@@ -24,13 +24,13 @@
 }
 
 .body{
-    background-color: var(--Neutral-900);
     width: 100%;
     height: 100vh;
 }
 
 .main{
     padding: 0rem 6rem;
+    background-color: var(--Neutral-900);
 }
 
 .header{
@@ -86,7 +86,7 @@ nav{
 
 .search input{
     width: 30%;
-    height: 40px;
+    height: 45px;
     background-color: var(--Neutral-700);
     border: none;
     padding-left: 2rem;
@@ -107,13 +107,14 @@ nav{
 .weather{
     display: flex;
     width: 100%;
-    gap: 5rem;
+    gap: 4rem;
+    padding-top: 1rem;
     /* background-color: aqua */
 }
 
 
 .weather .left{
-    width: 60%;
+    width: 61%;
 }
 .weather-indi{
     padding: 2rem;
@@ -140,6 +141,7 @@ nav{
     color: var(--Neutral-20);
     font-family: var(--Dm-Sans-font);
     font-weight: 400;
+    font-size: 15px;
 }
 
 
@@ -259,8 +261,81 @@ nav{
     font-weight: 400; 
 }
 
+
+.weather-daily{
+    padding-top: 2rem;
+}
+
+.weather-daily h3{
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 500;
+}
+.days{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tue,
+.wed,
+.thu,
+.fri,
+.sat,
+.sun,
+.mon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--Neutral-700);
+    width: 100px;
+    border-radius: 10px;
+}
+
+.tue p,
+.wed p,
+.thu p,
+.fri p,
+.sat p,
+.sun p,
+.mon p
+{
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-size: 15px;
+}
+
+.tue img,
+.wed img,
+.thu img,
+.fri img,
+.sat img,
+.sun img,
+.mon img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.day-tem{
+    display: flex;
+    gap: 40px;
+}
+
+.day-tem span{
+    font-family: var(--Dm-Sans-font);
+    color: var(--Neutral);
+    font-size: 15px;
+}
+
 .weather-hour{
-    width: 25%;
+    width: 35%;
+    height: 30%;
     background-color: var(--Neutral-700);
     border-radius: 10px;
     padding: 1rem;
@@ -297,25 +372,73 @@ nav{
 }
 
 .time{
-    background-color: var(--Neutral-600);
     border-radius: 10px;
-}
-
-.pm-3{
     display: flex;
-    padding: 8px;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
-    border-radius: 15px;
+    flex-direction: column;
+    gap: .8rem;
 }
 
-.pm-3 img{
+.pm-3,
+.pm-4,
+.pm-5,
+.pm-6,
+.pm-7,
+.pm-8,
+.pm-9,
+.pm-10
+{
+    display: flex;
+    padding: 8px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--Neutral-600);
+
+}
+
+.pm-3 img,
+.pm-4 img,
+.pm-5 img,
+.pm-6 img,
+.pm-7 img,
+.pm-8 img,
+.pm-9 img,
+.pm-10 img
+{
     width: 30px;
     height: 30px;
 }
 
-.pm-3 p{
+.pm-3 p,
+.pm-4 p,
+.pm-5 p,
+.pm-6 p,
+.pm-7 p,
+.pm-8 p,
+.pm-9 p,
+.pm-10 p
+{
     font-family: var(--Dm-Sans-font);
     color: var(--Neutral-20);
+    font-size: 18px;
+}
+
+.pm-3 span,
+.pm-4 span,
+.pm-5 span,
+.pm-6 span,
+.pm-7 span,
+.pm-8 span,
+.pm-9 span,
+.pm-10 span
+{
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-size: 15px;
+}
+
+.hour-time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
