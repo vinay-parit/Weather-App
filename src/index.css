@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root{
+    --Neutral-900: hsl(243, 96%, 9%);
+    --Neutral-800: hsl(243, 27%, 20%);
+    --Neutral-700: hsl(243, 23%, 24%);
+    --Neutral-600: hsl(243, 23%, 30%);
+    --Neutral-30: hsl(240, 6%, 70%);
+    --Neutral-20: hsl(250, 6%, 84%);
+    --Neutral : hsl(0, 0%, 100%);
+    --Orange-500: hsl(28, 100%, 52%);
+    --Blue-500: hsl(233, 67%, 56%);
+    --Blue-700: hsl(248, 70%, 36%);
+
+    --Bricolage-font: "Bricolage Grotesque";
+    --Dm-Sans-font: "Dm Sans"
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: var(--Neutral-900);
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    padding: 0rem 6rem;
+}
+
+.header{
+    padding-top: 2rem
+    /* background-color: crimson; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+    background-color: var(--Neutral-700);
+    padding: 6px 15px;
+    border-radius: 8px;
+}
+
+.menu h3{
+    color: var(--Neutral-20);
+    font-family: var(--Bricolage-font);
+    font-weight: 400;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top : 2rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    /* background-color: aqua; */
+}
+
+.hero-section h1{
+    color: var(--Neutral);
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--Bricolage-font);
+    font-weight: 500;
+}
+
+.search{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.search input{
+    width: 30%;
+    height: 40px;
+    background-color: var(--Neutral-700);
+    border: none;
+    padding-left: 2rem;
+    border-radius: 10px;
+}
+
+
+.search button{
+    padding: 10px 25px;
+    background-color: var(--Blue-500);
+    color: var(--Neutral);
+    border-radius: 10px;
+    border: none;
+    font-family: var(--Dm-Sans-font);
+    font-size: 15px;
+}
+
+.weather{
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    /* background-color: aqua */
+}
+
+
+.weather .left{
+    width: 60%;
+}
+.weather-indi{
+    padding: 2rem;
+    background-image: url("../public/images/bg-today-large.svg");
+    background-repeat: no-repeat;
+    height: 285px;
+    /* width: 60%; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.weather-city h3{
+    color: var(--Neutral);
+    font-size: 25px;
+    font-family: var(--Dm-Sans-font);
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.weather-city h4{
+    color: var(--Neutral-20);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 400;
+}
+
+
+.weather-temp{
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    gap: 25px;
+}
+
+.weather-temp img{
+    width: 100px;
+    height: 100px;
+    /* background-color: crimson; */
+}
+
+.weather-temp h1{
+   font-size: 6rem;
+   color: var(--Neutral);
+   font-family: var(--Dm-Sans-font);
+   font-weight: 500;
+}
+
+.weather-info{
+    /* width: 60%; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 25px;
+    padding-top: 1rem;
+}
+
+.feels{
+    width: 180px;
+    height: 100px;
+    background-color: var(--Neutral-700);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.feels p{
+    color: var(--Neutral-20);
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: var(--Dm-Sans-font);
+}
+
+.feels h3{
+    font-size: 25px;
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 400;
+}
+
+.humidity{
+    width: 180px;
+    height: 100px;
+    background-color: var(--Neutral-700);
+     border-radius: 8px;
+    padding: 10px;
+}
+
+.humidity p{
+     color: var(--Neutral-20);
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: var(--Dm-Sans-font);
+}
+
+.humidity h3{
+     font-size: 25px;
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 400;
+}
+
+.wind{
+    width: 180px;
+    height: 100px;
+    background-color: var(--Neutral-700);
+     border-radius: 8px;
+    padding: 10px;
+}
+
+.wind p{
+     color: var(--Neutral-20);
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: var(--Dm-Sans-font);
+}
+
+.wind h3{
+    font-size: 25px;
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 400; 
+}
+
+.precipitation{
+     width: 180px;
+    height: 100px;
+    background-color: var(--Neutral-700);
+     border-radius: 8px;
+    padding: 10px;
+}
+
+.precipitation p{
+     color: var(--Neutral-20);
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: var(--Dm-Sans-font);
+}
+
+.precipitation h3{
+    font-size: 25px;
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 400; 
+}
+
+.weather-hour{
+    width: 25%;
+    background-color: var(--Neutral-700);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h2{
+    color: var(--Neutral);
+    font-family: var(--Dm-Sans-font);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.menu-day{
+     display: flex;
+     gap: 5px;
+     background-color: var(--Neutral-600);
+     padding: 5px 10px;
+     border-radius: 6px;
+}
+
+.heading p{
+    color: var(--Neutral-20);
+    font-family: var(--Dm-Sans-font);
+    font-size: 15px;
+}
+
+.time{
+    background-color: var(--Neutral-600);
+    border-radius: 10px;
+}
+
+.pm-3{
+    display: flex;
+    padding: 8px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+.pm-3 img{
+    width: 30px;
+    height: 30px;
+}
+
+.pm-3 p{
+    font-family: var(--Dm-Sans-font);
+    color: var(--Neutral-20);
+}
