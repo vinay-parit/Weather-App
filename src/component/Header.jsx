@@ -34,13 +34,13 @@ const Header = () => {
     <div className="header">
       <nav>
         <div className="logo">
-          <img src="/src/assets/images/logo.svg" alt="logo" />
+          <img src="/images/logo.svg" alt="logo" />
         </div>
 
         <div className="menu" onClick={() => setOpen(!open)}>
-          <img src="/src/assets/images/icon-units.svg" alt="settings" />
+          <img src="/images/icon-units.svg" alt="settings" />
           <h3>Units</h3>
-          <img src="/src/assets/images/icon-dropdown.svg" />
+          <img src="/images/icon-dropdown.svg" />
         </div>
 
         {/* DROPDOWN */}

@@ -51,14 +51,7 @@ const App = () => {
 
   // FETCH WEATHER
   const fetchWeather = async () => {
-    setWeather(null); // trigger loading skeleton
-
-    // const url = `https://api.open-meteo.com/v1/forecast?
-    //   latitude=${coords.lat}&longitude=${coords.lon}
-    //   &current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code
-    //   &hourly=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code
-    // `.replace(/\s+/g, "");
-
+    setWeather(null); 
     const url = `https://api.open-meteo.com/v1/forecast?
       latitude=${coords.lat}&longitude=${coords.lon}
       &current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code,apparent_temperature,precipitation
